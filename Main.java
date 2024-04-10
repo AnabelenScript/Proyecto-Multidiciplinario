@@ -10,12 +10,13 @@ public class Main {
     public static void verMenu() {
         Scanner sc = new Scanner(System.in);
         Inventario objInventario = new Inventario();
+        carritoDeCompras carrito= new carritoDeCompras();
         int menu = 0;
         boolean valida = false;
         do {
             System.out.println("Bienvenida Patricia");
             System.out.println("Que desea realizar?");
-            System.out.println("1) Ingresar nuevos productos  2) Modificar productos  3) Eliminar productos 4)Realizar pago  5)Realizar apartado  6) Imprimir registro 7) Ver inventario  8) Salir ");
+            System.out.println("1) Ingresar nuevos productos  2) Modificar productos  3) Eliminar productos 4)Realizar pago  5)Realizar apartado  6) Ver inventario  8) Salir ");
             while (valida == false) {
                 try {
                     menu = sc.nextInt();
@@ -40,10 +41,13 @@ public class Main {
                     break;
 
                 case 4:
-                    carritoDeCompras.agregarProducto();
+                    objCarrito.agregarProducto();
                     break;
+                 case 5:
+                objapartado.ingresarProductosApartados();
+                break;
 
-                case 7:
+                case 6:
                     objInventario.imprimirListaProducto();
                     break;
 
