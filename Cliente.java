@@ -10,4 +10,16 @@ public class Cliente {
     public Cliente() {
 
     }
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+    public void setNumTelefono(int numTelefono) {
+        this.numTelefono = numTelefono;
+    }
+    public int getNumTelefono() {
+        return numTelefono;
+    }
 }
